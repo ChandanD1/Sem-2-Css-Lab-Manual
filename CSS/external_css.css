@@ -1,0 +1,27 @@
+/* Styles for h2 */
+h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Styles for hr */
+  hr {
+    border: 1px solid #ccc;
+  }
+  
+  /* Styles for p */
+  p {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  /* Styles for a */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

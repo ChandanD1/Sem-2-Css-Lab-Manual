@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel</title>
+<style>
+  #carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+  .carousel-container {
+    display: flex;
+    height:200px;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-item {
+    min-width: 60%;
+  }
+</style>
+</head>
+<body>
+  <div id="carousel">
+    <div class="carousel-container">
+      <div class="carousel-item" style="background-color: #f00;">Slide 1</div>
+      <div class="carousel-item" style="background-color: #0f0;">Slide 2</div>
+      <div class="carousel-item" style="background-color: #00f;">Slide 3</div>
+      <div class="carousel-item" style="background-color: rgb(229, 255, 0);">Slide 4</div>
+      <div class="carousel-item" style="background-color: rgb(255, 157, 0);">Slide 5</div>
+      <div class="carousel-item" style="background-color: rgb(200, 0, 255);">Slide 6</div>
+      <div class="carousel-item" style="background-color: rgb(0, 255, 234);">Slide 7</div>
+      <div class="carousel-item" style="background-color: rgb(255, 102, 0);">Slide 8</div>
+      <div class="carousel-item" style="background-color: rgb(0, 166, 255);">Slide 9</div>
+      <div class="carousel-item" style="background-color: rgb(128, 0, 255);">Slide 10</div>
+      <div class="carousel-item" style="background-color: rgb(255, 0, 115);">Slide 11</div>
+      <div class="carousel-item" style="background-color: rgb(187, 255, 0);">Slide 12</div>
+    </div>
+  </div>
+
+  <script>
+    var container = document.querySelector('.carousel-container');
+    var items = document.querySelectorAll('.carousel-item');
+    var currentIndex = 0;
+    var itemWidth = items[0].offsetWidth;
+
+    function moveToNextSlide() {
+      currentIndex = (currentIndex + 1) % items.length;
+      container.style.transform = 'translateX(-' + (currentIndex * itemWidth) + 'px)';
+    }
+
+    setInterval(moveToNextSlide, 3000);
+  </script>
+</body>
+</html>

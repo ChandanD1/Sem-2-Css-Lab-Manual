@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .cart {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .item-info {
+    padding: 10px;
+  }
+  .item-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .item-price {
+    color: #009900;
+    margin-bottom: 5px;
+  }
+  .add-to-cart {
+    background-color: #009900;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .add-to-cart:hover {
+    background-color: #007700;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Shopping Cart</h1>
+</header>
+
+<div class="container">
+  <div class="cart">
+    <div class="item">
+      <img src="https://picsum.photos/seed/picsum/200/300" alt="Product Image">
+      <div class="item-info">
+        <h3 class="item-title">Product 1</h3>
+        <p class="item-price">$10.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/200/300?grayscale" alt="Product Image">
+      <div class="item-info">
+        <h3 class="item-title">Product 2</h3>
+        <p class="item-price">$15.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/200/300/?blur" alt="Product Image">
+      <div class="item-info">
+        <h3 class="item-title">Product 3</h3>
+        <p class="item-price">$20.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="item">
+        <img src="https://picsum.photos/200/300/?blur=2" alt="Product Image">
+        <div class="item-info">
+          <h3 class="item-title">Product 4</h3>
+          <p class="item-price">$10.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/id/870/200/300?grayscale&blur=2" alt="Product Image">
+        <div class="item-info">
+          <h3 class="item-title">Product 5</h3>
+          <p class="item-price">$15.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/id/237/200/300" alt="Product Image">
+        <div class="item-info">
+          <h3 class="item-title">Product 6</h3>
+          <p class="item-price">$20.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s" alt="Product Image">
+        <div class="item-info">
+          <h3 class="item-title">Product 7</h3>
+          <p class="item-price">$10.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://fastly.picsum.photos/id/24/4855/1803.jpg?hmac=ICVhP1pUXDLXaTkgwDJinSUS59UWalMxf4SOIWb9Ui4" alt="Product Image">
+        <div class="item-info">
+          <h3 class="item-title">Product 8</h3>
+          <p class="item-price">$15.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/200/300/?blur" alt="Product Image">
+        <div class="item-info">
+          <h3 class="item-title">Product 9</h3>
+          <p class="item-price">$20.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>
